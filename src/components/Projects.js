@@ -1,6 +1,6 @@
 import React from 'react'
 export default function Projects() {
-    return(
+    return (
         <h1>Projects</h1>
     );
 }

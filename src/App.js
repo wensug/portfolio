@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-// import logo from './logo.svg';
+import { HashRouter as Router, Route, Switch } from 'react-router-dom';
 import './App.css';
+import Header from './components/Header/Header'
 import Homepage from './components/Homepage';
 import Projects from './components/Projects';
 import About from './components/About';
@@ -11,14 +11,15 @@ class App extends Component {
   render() {
     return (
       <Router>
-        <div className="App">
-          <Switch>
-            <Route exact path='/' component={Homepage} />
-            <Route exact path='/projects' component={Projects} />
-            <Route exact path='/about' component={About} />
-            <Route exact path='/contact' component={Contact} />
-          </Switch>
-        </div>
+         <Header />
+          <div className='App'>
+            <Switch>
+              <Route exact path='/' component={Homepage} />
+              <Route path='/projects' component={Projects} />
+              <Route path='/about' component={About} />
+              <Route path='/contact' component={Contact} />
+            </Switch>
+          </div>
       </Router>
 
     );

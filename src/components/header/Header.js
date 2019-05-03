@@ -1,22 +1,16 @@
 import React from 'react';
-import logo from '../header/logo.svg';
-import '../header/Header.css'
+import { NavLink } from 'react-router-dom';
+import './Header.css'
 
 export default function Header() {
   return (
-      <header className="Header">
-        <img src={logo} className="Header-logo" alt="logo" />
-        <p>
-          Wendy Gonzalez
-        </p>
-        <a
-          className="Header-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <header>
+      <ul className='Header'>
+        <li><NavLink to='/'>Home</NavLink></li>
+        <li><NavLink to='/about'>About</NavLink></li>
+        <li><NavLink to='/projects'>Projects</NavLink></li>
+        <li><NavLink to='/contact'>Contact</NavLink></li>
+      </ul>
+    </header>
   );
 }

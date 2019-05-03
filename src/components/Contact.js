@@ -1,6 +1,6 @@
 import React from 'react'
 export default function Contact() {
-    return(
+    return (
         <h1>Contact!</h1>
     );
 }
