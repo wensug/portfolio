@@ -3,7 +3,11 @@
   -moz-box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.2);
   -webkit-box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.2);
   box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.2);
+  position: fixed;
+  width: 100%;
+  top: 0;
 } 
+
 ul.Header {
   list-style-type: none;
   margin: 0;
@@ -11,10 +15,8 @@ ul.Header {
   border: 1px solid #e7e7e7;
   color: #4a4a4a;
 }
-ul.Header li {
-    float: left;
-}
 ul.Header li a {
+    float: left;
     display: block;
     color: #4a4a4a;
     text-align: center;
@@ -31,7 +33,7 @@ ul.Header a.active {
 } 
 
 @media screen and (max-width: 600px) {
-  ul.Header li {
+  ul.Header li a {
     float: none;
   }
 }

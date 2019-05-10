@@ -13,10 +13,10 @@ export default function Header() {
   return (
     <header>
       <ul className='Header'>
-        <li><NavLink to='/#home'>Home</NavLink></li>
+        <li><NavLink onClick={() => scrollElement('#home')} to='/#home'>Home</NavLink></li>
         <li><NavLink onClick={() => scrollElement('#about')} to='/#about'>About</NavLink></li>
-        <li><NavLink onClick={() => scrollElement('#projects')}to='/#projects'>Projects</NavLink></li>
-        <li><NavLink onClick={() => scrollElement('#contact')}to='/#contact'>Contact</NavLink></li>
+        <li><NavLink onClick={() => scrollElement('#projects')} to='/#projects'>Projects</NavLink></li>
+        <li><NavLink onClick={() => scrollElement('#contact')} to='/#contact'>Contact</NavLink></li>
       </ul>
     </header>
   );

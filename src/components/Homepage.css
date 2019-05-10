@@ -1,6 +1,21 @@
-.container {
-   margin: 100px;
+
+.Homepage-container {
+   display: flex;
+   display: -ms-flexbox;
+   height: 100vh;
+   width: 100%;
+   background-image: url('../images/coding1.jpg');
+   background-size: cover;
+   background-position: center;
+   /* justify-content: center; */
+   /* align-items: center; */
+   color: darkolivegreen;
 }
+/* .Homepage-container h1 {
+   font-size: 4rem;
+   font-weight: 400;
+   margin-top: 10em;  
+} */
 
 img {
     border: 6px solid white;
