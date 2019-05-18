@@ -12,12 +12,21 @@ function scrollElement(id) {
 export default function Header() {
   return (
     <header>
-      <ul className='Header'>
-        <li><NavLink onClick={() => scrollElement('#home')} to='/#home'>Home</NavLink></li>
-        <li><NavLink onClick={() => scrollElement('#about')} to='/#about'>About</NavLink></li>
-        <li><NavLink onClick={() => scrollElement('#projects')} to='/#projects'>Projects</NavLink></li>
-        <li><NavLink onClick={() => scrollElement('#contact')} to='/#contact'>Contact</NavLink></li>
-      </ul>
+      <div className="nav">
+        <p className="logo">Wensug</p>
+        <ul className="menu">
+          <li><NavLink onClick={() => scrollElement('#home')} to='/#home'>Home</NavLink></li>
+          <li><NavLink onClick={() => scrollElement('#about')} to='/#about'>About</NavLink></li>
+          <li><NavLink onClick={() => scrollElement('#projects')} to='/#projects'>Projects</NavLink></li>
+          <li><NavLink onClick={() => scrollElement('#contact')} to='/#contact'>Contact</NavLink></li>
+        </ul>
+      </div>
     </header>
   );
 }
+
+    {/* <div className='footer-media'>
+            <a href='https://github.com/wensug'><i className="fab fa-github"></i></a>
+            <a href='https://www.linkedin.com/in/wendygonzalezcriollo/'><i className="fab fa-linkedin"></i></a>
+            <a href='https://twitter.com/wendygoncriollo'><i className="fab fa-twitter"></i></a>
+            </div> */}

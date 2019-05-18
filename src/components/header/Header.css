@@ -1,21 +1,29 @@
  header {
   background-color: #fff;
+  box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.2);
   -webkit-box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.2);
-  box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.2);
   position: fixed;
-  width: 100%;
   top: 0;
-} 
+  width: 100%;
+}
 
-ul.Header {
+.nav {
+  margin: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+ul.menu {
+  display: flex;
   list-style-type: none;
   margin: 0;
   overflow: hidden;
   border: 1px solid #e7e7e7;
   color: #4a4a4a;
 }
-ul.Header li a {
+/* ul.menu li a {
     float: left;
     display: block;
     color: #4a4a4a;
@@ -36,5 +44,5 @@ ul.Header a.active {
   ul.Header li a {
     float: none;
   }
-}
+} */
 

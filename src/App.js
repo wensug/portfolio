@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { HashRouter as Router} from 'react-router-dom';
+import 'normalize.css';
 import './App.css';
 import Header from './components/Header/Header'
 import Homepage from './components/Homepage';
@@ -9,8 +10,8 @@ class App extends Component {
     return (
       <Router>
           <div className='App'>
-          <Header />
-          <Homepage />
+            <Header />
+            <Homepage />
           </div>
       </Router>
 
