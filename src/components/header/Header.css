@@ -1,4 +1,4 @@
- header {
+header {
   background-color: #fff;
   box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.2);
@@ -20,29 +20,52 @@ ul.menu {
   list-style-type: none;
   margin: 0;
   overflow: hidden;
-  border: 1px solid #e7e7e7;
   color: #4a4a4a;
+  padding-inline-start: 0px
 }
-/* ul.menu li a {
-    float: left;
-    display: block;
-    color: #4a4a4a;
-    text-align: center;
-    padding: 16px 18px;
-    text-decoration: none;
-    
+ul.menu li a {
+  float: left;
+  display: block;
+  color: #4a4a4a;
+  text-align: center;
+  padding: 16px 18px;
+  text-decoration: none;
 }
- ul.Header li a:hover {
+ul.Header li a:hover {
   text-decoration: underline;
-} 
+}
 
 ul.Header a.active {
   font-weight: bold;
-} 
+}
+
+.button-xs {
+  background-color:#004777;
+  color: white !important;
+  margin: 10px 18px 16px 18px;
+}
 
 @media screen and (max-width: 600px) {
   ul.Header li a {
     float: none;
   }
-} */
+  header {
+    position: relative;
+  }
 
+  .nav {
+    flex-direction: column;
+    margin-top: 0;
+  }
+  .logo {
+    text-align: center;
+    cursor: pointer;
+  }
+  ul.menu {
+    display: inline-block;
+    padding: 0;
+  }
+  ul.menu li {
+    display: inline-block;
+  }
+}

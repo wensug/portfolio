@@ -1,3 +1,15 @@
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.3em;
+}
+
+h2 {
+  margin-bottom: 2em;
+}
+
+h3 {
+  font-size: 2em;
+}
+
 .section {
   min-height: 100vh;
   align-items: center;
@@ -83,9 +95,53 @@ body {
 /* Utilities */
 
 .button {
-  background-color: green;
   padding: 6px 12px;
   border: 1px transparent;
   border-radius: 4px;
   text-decoration: none;
+}
+
+.button-xs {
+  padding: 4px 10px !important;
+  border: 1px transparent;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 0.9em;
+}
+
+.tags {
+  line-height: 3em;
+  font-size: 10px;
+  margin-bottom: 18px;
+  display: flex;
+  flex-direction: row;
+}
+
+@media screen and (max-width: 400px) {
+  .tags {
+    flex-direction: column;
+  }
+  .tags > div {
+    margin-bottom: 12px;
+  }
+  .tag {
+    font-size: 16px;
+  }
+}
+
+.tag {
+  margin-right: 8px;
+  padding: 9px 12px;
+  background-color: grey;
+  border: 1px transparent;
+  border-radius: 16px;
+  vertical-align: middle;
+  color: rgba(255, 255, 255, 0.65);
+  white-space: pre;
+}
+
+.tag i {
+  font-size: 20px;
+  margin-right: 5px;
+  vertical-align: sub;
 }

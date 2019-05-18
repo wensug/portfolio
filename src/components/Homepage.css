@@ -1,5 +1,5 @@
 .hero {
-   background-color:green;
+   background-image: url("../images/coding4.jpg");
 }
 
 .hero .row {
@@ -7,7 +7,7 @@
 }
 
 .projects {
-   background-color:blue;
+   background-color: #E7EEF2;
 }
 
 .projects .row {
@@ -16,5 +16,22 @@
 }
 
 .contact {
-   background-color:red;
+   background-color:#004777;
+   color: white;
+}
+
+.contact .button {
+   color: white;
+   background-color: #C44536;
+}
+
+.contact .description {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   text-align: center;
+}
+
+.contact .description i {
+   color: rgba(255, 255,255, 0.9);
 }
