@@ -1,6 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import "./Header.css";
+// import logo from "../Header/wensug.png";
 
 function scrollElement(id) {
   console.log(id);
@@ -13,27 +14,27 @@ export default function Header() {
   return (
     <header>
       <div className="nav">
-        <p className="logo" onClick={() => scrollElement("#home")} to="/#home">Wensug</p>
+        <p className="logo" onClick={() => scrollElement("#home")} to="/#home">
+         Wensug {/* <img src={logo} height="46" width="77" /> */}
+        </p>
         <ul className="menu">
-          <li>
-            <NavLink onClick={() => scrollElement("#about")} to="/#about">
-              About
-            </NavLink>
-          </li>
           <li>
             <NavLink onClick={() => scrollElement("#projects")} to="/#projects">
               Projects
             </NavLink>
           </li>
           <li>
-            <NavLink onClick={() => scrollElement("#projects")} to="/#projects">
-            <i className="fab fa-github"></i>
-            </NavLink>
+            <a href="https://github.com/wensug" target="_blank">
+              <i className="fab fa-github" />
+            </a>
           </li>
           <li>
-            <NavLink onClick={() => scrollElement("#projects")} to="/#projects">
-            <i className="fab fa-linkedin"></i>
-            </NavLink>
+            <a
+              href="https://www.linkedin.com/in/wendygonzalezcriollo/"
+              target="_blank"
+            >
+              <i className="fab fa-linkedin" />
+            </a>
           </li>
           <li>
             <NavLink

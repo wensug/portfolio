@@ -1,17 +1,8 @@
 import React, { Component } from "react";
-import { NavLink } from "react-router-dom";
 import "./Header/Header.css";
 import "./Homepage.css";
 import Projects from "./Projects";
-import About from "./About";
 import Contact from "./Contact";
-
-function scrollElement(id) {
-  console.log(id);
-  document.querySelector(id).scrollIntoView({
-    behavior: "smooth"
-  });
-}
 
 class Homepage extends Component {
   render() {
@@ -58,7 +49,7 @@ class Homepage extends Component {
                 <div>
                   <span className="tag">
                     <i className="fas fa-database" />
-                    <b>MONGODB</b>
+                    <b>MongoDB</b>
                   </span>
                 </div>
                 <div>
@@ -72,7 +63,7 @@ class Homepage extends Component {
           </div>
         </div>
 
-        <div className="section projects">
+        <div className="section projects" id="projects">
           <div className="row">
             <h3 className="row-title">Projects</h3>
             <div class="card-container">
@@ -107,44 +98,49 @@ class Homepage extends Component {
           </div>
         </div>
 
-        <div className="section contact">
+        <div className="section contact" id="contact">
           <div className="row">
             <div className="description">
               <h3>Contact</h3>
-              <a href="#" class="button">
+              <a href="mailto:wensug@gmail.com" class="button">
                 Send me an email
               </a>
               <div className="nav">
                 <ul className="menu">
                   <li>
-                    <NavLink
-                      onClick={() => scrollElement("#projects")}
-                      to="/#projects"
+                    <a
+                      className="social-media"
+                      href="https://github.com/wensug"
+                      target="_blank"
                     >
                       <i className="fab fa-github" />
-                    </NavLink>
+                    </a>
                   </li>
                   <li>
-                    <NavLink
-                      onClick={() => scrollElement("#projects")}
-                      to="/#projects"
+                    <a
+                      className="social-media"
+                      href="https://www.linkedin.com/in/wendygonzalezcriollo/"
+                      target="_blank"
                     >
                       <i className="fab fa-linkedin" />
-                    </NavLink>
+                    </a>
                   </li>
                   <li>
-                    <NavLink
-                      onClick={() => scrollElement("#projects")}
-                      to="/#projects"
+                    <a
+                      className="social-media"
+                      href="https://twitter.com/wendygoncriollo"
+                      target="_blank"
                     >
                       <i className="fab fa-twitter" />
-                    </NavLink>
+                    </a>
                   </li>
                 </ul>
               </div>
             </div>
           </div>
         </div>
+        {/* <Projects />
+        <Contact /> */}
       </div>
     );
   }

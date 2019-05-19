@@ -31,11 +31,11 @@ ul.menu li a {
   padding: 16px 18px;
   text-decoration: none;
 }
-ul.Header li a:hover {
+ul.menu li a:hover {
   text-decoration: underline;
 }
 
-ul.Header a.active {
+ul.menu a.active {
   font-weight: bold;
 }
 
@@ -43,6 +43,13 @@ ul.Header a.active {
   background-color:#004777;
   color: white !important;
   margin: 10px 18px 16px 18px;
+}
+
+.logo {
+  cursor: pointer;
+  text-align: center;
+  color:#C44536;
+ 
 }
 
 @media screen and (max-width: 600px) {
@@ -56,16 +63,12 @@ ul.Header a.active {
   .nav {
     flex-direction: column;
     margin-top: 0;
+    margin-bottom: -72px;
   }
-  .logo {
-    text-align: center;
-    cursor: pointer;
-  }
+  
   ul.menu {
-    display: inline-block;
+    display: inline-grid;
+    justify-items: center;
     padding: 0;
-  }
-  ul.menu li {
-    display: inline-block;
   }
 }
