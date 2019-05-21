@@ -1,0 +1,45 @@
+.hero {
+   background-image: url("../../images/image9.png");
+   background-size: cover; 
+} 
+
+.hero .row {
+   justify-content: start;
+}
+
+.tags {
+   line-height: 3em;
+   font-size: 10px;
+   margin-bottom: 18px;
+   display: flex;
+   flex-direction: row;
+ }
+ 
+ .tag {
+   margin-right: 8px;
+   padding: 9px 12px;
+   background-color: grey;
+   border: 1px transparent;
+   border-radius: 16px;
+   vertical-align: middle;
+   color: rgba(255, 255, 255, 0.65);
+   white-space: pre;
+ }
+ 
+ .tag i {
+   font-size: 20px;
+   margin-right: 5px;
+   vertical-align: sub;
+ }
+ @media screen and (max-width: 400px) {
+   .tags {
+     flex-direction: column;
+   }
+   .tags > div {
+     margin-bottom: 12px;
+   }
+   .tag {
+     font-size: 16px;
+   }
+ }
+ 

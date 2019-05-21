@@ -47,101 +47,19 @@ body {
   margin-bottom: 3em;
 }
 
-.hero {
-  background-size: cover;
-}
-
-.card-container {
-  display: flex;
-  flex-direction: row;
-  margin-right: -15px;
-  margin-left: -15px;
-}
-
-@media screen and (max-width: 768px) {
-  .card-container {
-    flex-direction: column;
-  }
-}
-
-.card {
-  background-color: white;
-  flex-basis: 0;
-  -webkit-box-flex: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  max-width: 100%;
-  margin: 1em;
-  border: 1px transparent;
-  border-radius: 4px;
-}
-
-.card-image {
-  max-height: 200px;
-  overflow-y: hidden;
-  border-top-left-radius: 4px;
-  border-top-right-radius: 4px;
-}
-
-.card-image img {
-  min-width: 100%;
-}
-
-.card-text {
-  padding: 1em 2em;
-}
-
-
 /* Utilities */
 
-.button {
+/* .button {
   padding: 6px 12px;
   border: 1px transparent;
   border-radius: 4px;
   text-decoration: none;
-}
+} */
 
-.button-xs {
+/* .button-xs {
   padding: 4px 10px !important;
   border: 1px transparent;
   border-radius: 4px;
   text-decoration: none;
   font-size: 0.9em;
-}
-
-.tags {
-  line-height: 3em;
-  font-size: 10px;
-  margin-bottom: 18px;
-  display: flex;
-  flex-direction: row;
-}
-
-@media screen and (max-width: 400px) {
-  .tags {
-    flex-direction: column;
-  }
-  .tags > div {
-    margin-bottom: 12px;
-  }
-  .tag {
-    font-size: 16px;
-  }
-}
-
-.tag {
-  margin-right: 8px;
-  padding: 9px 12px;
-  background-color: grey;
-  border: 1px transparent;
-  border-radius: 16px;
-  vertical-align: middle;
-  color: rgba(255, 255, 255, 0.65);
-  white-space: pre;
-}
-
-.tag i {
-  font-size: 20px;
-  margin-right: 5px;
-  vertical-align: sub;
-}
+} */

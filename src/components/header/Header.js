@@ -1,7 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import "./Header.css";
-// import logo from "../Header/wensug.png";
+// import logo from "../Header/wendyg.png";
 
 function scrollElement(id) {
   console.log(id);
@@ -15,7 +15,7 @@ export default function Header() {
     <header>
       <div className="nav">
         <p className="logo" onClick={() => scrollElement("#home")} to="/#home">
-         Wensug {/* <img src={logo} height="46" width="77" /> */}
+          Wendy Gonzalez{/* <img src={logo}/> */}
         </p>
         <ul className="menu">
           <li>

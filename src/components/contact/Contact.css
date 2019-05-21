@@ -1,0 +1,30 @@
+.contact {
+    background-color:#004777;
+    color: white;
+ }
+ 
+ .contact .button {
+    color: white;
+    background-color: #C44536;
+ }
+ 
+ .contact .description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+ }
+ 
+ .contact .description i {
+    color: rgba(255, 255,255, 0.9);
+ }
+ 
+ .button {
+    padding: 6px 12px;
+    border: 1px transparent;
+    border-radius: 4px;
+    text-decoration: none;
+  }
+ .social-media{
+    font-size: 2rem;
+ }
