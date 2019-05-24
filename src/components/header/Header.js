@@ -24,7 +24,11 @@ export default function Header() {
             </NavLink>
           </li>
           <li>
-            <a href="https://github.com/wensug" target="_blank">
+            <a
+              href="https://github.com/wensug"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <i className="fab fa-github" />
             </a>
           </li>
@@ -32,6 +36,7 @@ export default function Header() {
             <a
               href="https://www.linkedin.com/in/wendygonzalezcriollo/"
               target="_blank"
+              rel="noopener noreferrer"
             >
               <i className="fab fa-linkedin" />
             </a>

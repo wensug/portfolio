@@ -10,8 +10,8 @@ class Homepage extends Component {
         <div className="section hero">
           <div className="row">
             <div>
-              <h1>I'm Wendy a Frontend Developer</h1>
-              <h2>I'm Wendy a Frontend Developer</h2>
+              <h1>Wendy Gonzalez</h1>
+              <h2>Software Developer</h2>
               <p className="tags">
                 <div>
                   <span className="tag">
