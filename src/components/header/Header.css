@@ -53,6 +53,8 @@ ul.menu a.active {
 .logo {
   cursor: pointer;
   margin: 16px 18px;
+  font-family: 'Pacifico', cursive;
+  font-size: 18px
   
 }
 

@@ -2,7 +2,7 @@ import React from "react";
 import "./Projects.css";
 import carru from "../../images/242.jpg";
 import kodflix from "../../images/sing.jpg";
-import moodslider from "../../images/18900.jpg";
+import moodslider from "../../images/moodslider.png";
 
 export default function Projects() {
   return (
@@ -42,7 +42,7 @@ export default function Projects() {
           </div>
           <div className="card">
             <div className="card-image">
-              <a href="https://github.com/wensug" target="_blank" rel="noopener noreferrer">
+              <a href="https://github.com/wensug/moodslider/" target="_blank" rel="noopener noreferrer">
                 <img src={moodslider} alt="Moodslider" />
               </a>
             </div>
